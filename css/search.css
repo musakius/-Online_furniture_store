@@ -1,0 +1,51 @@
+section .p_search {
+    margin-left: -30px;
+    text-align: center;
+    margin: 10px;
+    color: #444;
+    font-size: 22px;
+}
+section .p_search span{
+    margin-left: 10px;
+    color: #4a8a8b;
+    font-size: 22px;
+}
+section .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+section .content slot .item {
+    text-align: left;
+    width: 260px;
+    height: 443px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 0 11px 20px 11px;
+}
+section .content slot .item .img {
+    width: 260px;
+}
+section .content slot .item .name {
+    font-family: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    color: #4a8a8b;
+    padding: 10px;
+}
+section .content slot .item .description {
+    height: 80px;
+    line-height: 20px;
+    overflow: hidden;
+    margin: 10px;
+    color: #666;
+    font-size: 12px;
+}
+section .content slot .item .price {
+    margin: 10px;
+    color: #444;
+    font-size: 18px;
+}

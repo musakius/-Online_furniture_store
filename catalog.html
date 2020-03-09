@@ -1,23 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="import" href="index.html">
+    <title>Каталог</title>
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/catalog.css">
+    <link rel="stylesheet" href="./css/product.css">
 </head>
 
 <body>
-    <script>
-        function windowInfo(file){
-        var blockInfo = document.getElementById("blockInfo");
-        var windowInfo = document.getElementById("windowInfo");
-        windowInfo.innerHTML = "<iframe src='"+ file +"' style='border: none; width: 100%; height: 100%;'></frame>";
-        blockInfo.style.display = "block";
-        windowInfo.onmousemove = function(){blockInfo.onclick = function(){blockInfo.style.display = "none";};};
-}
-    </script>
+    <div class="wrapper">
+        <nav class="top_ponnel"></nav>
+        <header></header>
+        <nav class="nav_bar"></nav>
+        <section class="container_catalog" id="container_catalog">
+            <div class="center">
+                <h2>Каталог</h2>
+                <div class="catalog">
+                    <div class="container_search">
+                        <div id="categories" class="categories">
+                            <h5>Выберите категорию</h5>
+                            <div id="Ящики для игрушек" class="box block_catygory">- Ящики для игрушек</div>
+                            <ul class="selection_box block__radio" style="display: none;">
+                                <li id="box">
+                                    Ящики
+                                    <p><label><input name="1" type="radio" id="modular" >Модульные ящики</label></p>
+                                    <p><label><input name="1" type="radio" id="big">Большие</label></p>
+                                    <p><label><input name="1" type="radio" id="cap">Крышки для ящиков</label></p>
+                                    <p><label><input name="1" type="radio" id="rest_box">Остальные ящики</label></p>
+                                </li>
+                                <li>
+                                    Рамочка
+                                    <p><label><input name="1" type="radio" id="frame">С рамочкой</label></p>
+                                    <p><label><input name="1" type="radio" id="no_frame">Без</label></p>
+                                </li>
+                                <li>
+                                    Крышки
+                                    <p><label><input name="1" type="radio" id="slate_cap">Грифельные крышки</label></p>
+                                    <p><label><input name="1" type="radio" id="no_slate_cap">Модульные крышки</label></p>
+                                </li>
+                            </ul>
+                            <div id="Стеллажи и полки" class="rack block_catygory">- Стеллажи и Полки для книг</div>
+                            <ul class="selection_rack block__radio" style="display: none;">
+                                <li>
+                                    Стеллажи и полки
+                                    <p><label><input name="1" type="radio" id="shelf">Полки для книг</label></p>
+                                    <p><label><input name="1" type="radio" id="rack">Стеллажи</label></p>  
+                                </li>
+                                <li>
+                                    Стеллаж
+                                    <p><label><input name="1" type="radio" id="open">Открытый</label></p>
+                                    <p><label><input name="1" type="radio" id="with_divisions">С делениями</label></p>
+                                    <p><label><input name="1" type="radio" id="close">Закрытый</label></p>
+                                </li>
+                                <li>
+                                    Полки для книг
+                                    <p><label><input name="1" type="radio" id="outdoor">Напольная</label></p>
+                                    <p><label><input name="1" type="radio" id="wall_mounted">Настенная</label></p>
+                                </li>
+                            </ul>
+                            <div id="Грифельные доски" class="griffin block_catygory">- Грифельные доски</div>
+                            <ul class="selection_griffin block__radio" style="display: none;">
+                                <li>
+                                    Грифельные доски
+                                    <p><label><input name="1" type="radio" id="magnetic">Магнитные</label></p>
+                                    <p><label><input name="1" type="radio" id="no_magnetic">Не магнитные</label></p>
+                                </li>
+                                <li>
+                                    Размер
+                                    <p><label><input name="1" type="radio" id="big_board">Большые</label></p>
+                                    <p><label><input name="1" type="radio" id="small_board">Маленькие</label></p>
+                                </li>
+                            </ul>
+                            <div id="Остальные товары" class="rest block_catygory">- Остальные товары и фурнитура</div>
+                            <ul class="selection_rest block__radio" style="display: none;">
+                                <li>
+                                    Товары и фурнитура
+                                    <p><label><input name="1" type="radio" id="pencil_box">Карандашницы</label></p>
+                                    <p><label><input name="1" type="radio" id="toy_furniture">Игрушечная мебели</label></p>
+                                    <p><label><input name="1" type="radio" id="furniture">Фурнитура</label></p>
+                                    <p><label><input name="1" type="radio" id="crayons">Мелки</label></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="container_product"></div>
+                </div>
+            </div>
+        </section>
+        <footer></footer>
+    </div>
+    <script src="./js/head_footer.js"></script>
+    <script src="./js/cardStore.js"></script>
+    <script src="./js/products.js"></script>
+    <script src="./js/createOneProduct.js"></script>
+    <script src="./js/catalog.js"></script>
+    <script src="./js/function.js"></script>
+    <script src="./js/miniCart.js"></script>
+    <script src="./js/search.js"></script>
 </body>
 
 </html>

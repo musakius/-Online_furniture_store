@@ -1,0 +1,84 @@
+section h3 {
+    text-align: center;
+    border-top: 1px solid #e4e4e4;
+    padding: 50px 0 20px 0;
+    color: #4a8a8b;
+}
+section .block_calc {
+    width: 100%;
+    display: flex;
+}
+section .block_calc ul {
+    width: 65%;
+}
+section .block_calc ul li {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+}
+section .block_calc ul li .block_name .name {
+    position: relative;
+    bottom: 45px;
+    left: 15px;
+    font-weight: 600;
+    color: #4a8a8b;
+}
+section .block_calc ul li .block_name img{
+ width: 100px;
+}
+section .block_calc ul li .block_price{
+    display: flex;
+    padding: 30px 0;
+}
+section .block_calc ul li .block_price p {
+    font-weight: 600;
+    padding: 15px;
+}
+
+section .block_calc ul li .block_price i {
+    cursor: pointer;
+    color: #73c0c1;
+    font-size: 30px;
+    padding: 5px;
+}
+section .block_calc ul li .block_price i:hover {
+    color: rgb(216, 216, 58);
+}
+section .block_calc .block_result {
+    width: 32%;
+    order: 1;
+    margin: 0 50px;
+}
+section .block_calc .block_result h3 {
+    padding: 20px 0 20px 0;
+    margin: 0;
+    background-color: #73c0c1;;
+    color: rgb(255, 255, 255);
+}
+section .block_calc .block_result .result {
+    text-align: center;
+    border: 1px solid #e4e4e4;
+}
+section .block_calc .block_result .result ul {
+    width: 100%;
+}
+section .block_calc .block_result .result ul li {
+    border: none;
+    border-bottom: 1px solid #e4e4e4;
+    padding: 10px;
+}
+section .block_calc .block_result .result ul li .item span {
+    padding-right: 10px;
+}
+section .block_calc .block_result .result ul li .item i {
+    cursor: pointer;
+    color: brown;
+}
+section .block_calc .block_result .result .text {
+    text-align: right;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 15px;
+}

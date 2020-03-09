@@ -1,0 +1,106 @@
+.container_registration .content{
+    width: 60%;
+    display: flex;
+    margin: 40px auto 80px auto;
+}
+.container_registration .content .avatar {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color: rgb(130, 208, 253);
+}
+.container_registration .content .avatar img {
+    width: 120px;
+    padding: 20px 60px 180px 60px;
+}
+.container_registration .content form {
+    padding: 20px;
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+}
+.container_registration .content form label {
+    width: 100%;
+}
+.container_registration .content form label span {
+    display: inline-block;
+    width: 20%;
+}
+.container_registration .content form label input {
+    width: 70%;
+    padding: 6px 12px;
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+.container_registration .content form .btn_primary,
+.container_authorization form .btn_enter {
+    align-self: flex-end;
+    width: 160px;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #73c0c1;
+    padding: 7.5px 12px;
+    font-size: 12px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    margin-right: 20px;
+    outline: none;
+}
+.container_registration .content form .btn_primary:hover{
+    background-color: #35b9bb;
+}
+.container_registration .finish{
+    display: none;
+    text-align: center;
+    width: 60%;
+    margin: 40px auto 80px auto;
+}
+.container_registration .finish p {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 40px;
+}
+.container_registration .finish a {
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #73c0c1;
+    padding: 10px 18px;
+    font-size: 16px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    outline: none;
+}
+.container_authorization form {
+    padding: 20px;
+    width: 40%;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    margin: 40px auto 80px auto;
+}
+.container_authorization form label {
+    width: 100%;
+    margin: 20px 0;
+}
+.container_authorization form label span {
+    display: inline-block;
+    width: 20%;
+}
+.container_authorization form label input {
+    width: 70%;
+    padding: 6px 12px;
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+.container_authorization form .error_text {
+    text-align: center;
+    color: rgb(180, 19, 19);
+}

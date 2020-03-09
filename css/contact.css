@@ -1,0 +1,22 @@
+section .content {
+    width: 100%;
+    display: flex;
+    margin: 40px 0 100px 0;
+}
+section .content .contact {
+    width: 48%;
+    border: 1px solid #ddd;
+    padding: 40px;
+}
+section .content .contact div {
+    padding: 25px 0px;
+}
+section .content .contact div strong {
+    font-weight: 700;
+    color: #666;
+}
+section .content .contact div p {
+    padding: 7px 0px;
+    font-weight: 400;
+    color: #666;
+}

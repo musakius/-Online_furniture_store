@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/registration.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="top_ponnel"></nav>
+        <header></header>
+        <nav class="nav_bar"></nav>
+        <section class="container_registration">
+            <div class="center">
+                <h2 id="regist">Регистрация</h2>
+                <div class="content" id="content_user">
+                    <div class="avatar">
+                        <img src="./img/user-avatar-png-7.png">
+                    </div>
+                    <form class="form" onsubmit="return false;">
+                        <label><span>Логин:</span><input id="input_login" type="text" name="login" placeholder="Логин"
+                                required></label>
+                        <label><span>Пароль:</span><input id="input_password" type="text" name="password"
+                                placeholder="Пароль" required></label>
+                        <input id="btn_primary" type="submit" value="Продолжить" class="btn_primary">
+                    </form>
+                </div>
+                <div class="finish">
+                    <h2>Вы успешно зарегистрировались!</h2>
+                    <p>Ваш Личный Кабинет был успешно создан.</p>
+                    <a href=./authorization.html">Перейти к авторизации</a>
+                </div>
+            </div>
+        </section>
+        <footer></footer>
+    </div>
+    <script src="./js/head_footer.js"></script>
+    <script src="./js/cardStore.js"></script>
+    <script src="./js/products.js"></script>
+    <script src="./js/createOneProduct.js"></script>
+    <script src="./js/miniCart.js"></script>
+    <script src="./js/registration.js"></script>
+    <script src="./js/search.js"></script>
+</body>
+
+</html>

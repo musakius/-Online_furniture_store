@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <style type="text/css">
+        section ul {
+            width: 60%;
+            margin: 50px auto;
+        }
+        section ul li {
+            padding: 24px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        section ul li strong {
+            font-size: 19px;
+            font-weight: 600;
+        }
+        section ul li p {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="top_ponnel"></nav>
+        <header></header>
+        <nav class="nav_bar"></nav>
+        <section class="container_authorization">
+            <div class="center">
+                <h2 style="margin-top: 40px;">Frequently asked question</h2>
+                <ul class="content">
+                    <li class="li_cont">
+                        <strong>Can I request a refund?</strong>
+                        <div class="li_none" style="display: none;">
+                            <p>Of course, you can request a refund within 14 days of purchase</p>
+                        </div>
+                    </li>
+                    <li class="li_cont">
+                        <strong>Can I request a refund?</strong>
+                        <div class="li_none" style="display: none;">
+                            <p>Of course, you can request a refund within 14 days of purchase</p>
+                        </div>
+                    </li>
+                    <li class="li_cont">
+                        <strong>Can I request a refund?</strong>
+                        <div class="li_none" style="display: none;">
+                            <p>Of course, you can request a refund within 14 days of purchase</p>
+                        </div>
+                    </li>
+                    <li class="li_cont">
+                        <strong>Can I request a refund?</strong>
+                        <div class="li_none" style="display: none;">
+                            <p>Of course, you can request a refund within 14 days of purchase</p>
+                        </div>
+                    </li>
+                    <li class="li_cont">
+                        <strong>Can I request a refund?</strong>
+                        <div class="li_none" style="display: none;">
+                            <p>Of course, you can request a refund within 14 days of purchase</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <footer></footer>
+    </div>
+    <script>
+        let li = document.querySelectorAll('li');
+        let div = document.querySelectorAll('.li_none');
+
+        for (let i = 0; i < li.length; i++) {
+            li[i].onclick = function () {
+                if (div[i].style.display == 'none') {
+                    div[i].style.display = 'block';
+                } else if (div[i].style.display == 'block') {
+                    div[i].style.display = 'none';
+                }
+            }
+        }
+    </script>
+    <script src="../js_en/head_footer.js"></script>
+    <script src="../js_en/cardStore.js"></script>
+    <script src="../js_en/products.js"></script>
+    <script src="../js_en/createOneProduct.js"></script>
+    <script src="../js_en/miniCart.js"></script>
+    <script src="../js_en/search.js"></script>
+</body>
+
+</html>

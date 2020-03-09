@@ -1,0 +1,67 @@
+
+
+
+
+section .container-basket ul li {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #e4e4e4;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 10px;
+}
+section .container-basket ul li img{
+    width: 60px;
+}
+section .container-basket ul li .name {
+    width: 220px;
+    font-weight: 600;
+    color: #4a8a8b;
+    line-height: 60px;
+    font-size: 16px;
+    margin-left: -80px;
+}
+section .container-basket ul li div {
+    display: flex;
+    align-items: center;
+}
+section .container-basket ul li div button {
+    border: none;
+    background-color: #fff;
+    outline: none;
+}
+
+section .container-basket ul li div button i {
+    margin: 5px;
+    cursor: pointer;
+    color: #73c0c1;
+    font-size: 25px;
+}
+section .container-basket ul li div p {
+    border: 1px solid #666;
+    border-radius: 5px;
+    font-size: 18px;
+    outline: none;
+    height: 20px;
+    padding: 5px 12px;
+}
+section .container-basket ul li .price{
+    font-weight: 600;
+    color: #4a8a8b;
+    font-size: 14px;
+}
+section .container-basket ul li .total_price{
+    font-weight: 600;
+    font-size: 14px;
+}
+
+section .container-basket ul li i {
+    cursor: pointer;
+    color: brown;
+}
+section .container-basket .text {
+    text-align: right;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 25px 50px;
+}

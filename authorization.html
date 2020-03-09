@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация</title>
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/registration.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="top_ponnel"></nav>
+        <header></header>
+        <nav class="nav_bar"></nav>
+        <section class="container_authorization">
+            <div class="center">
+                <h2>Войти в Личный Кабинет</h2>
+                <form class="form" onsubmit="return false;">
+                    <p class="error_text"></p>
+                    <label><span>Логин:</span><input id="enter_login" type="text" name="login" placeholder="Логин"
+                            required></label>
+                    <label><span>Пароль:</span><input id="enter_password" type="password" name="password"
+                            placeholder="Пароль" required></label>
+                    <input id="btn_enter" type="submit" value="Войти" class="btn_enter">
+                </form>
+            </div>
+        </section>
+        <footer></footer>
+    </div>
+    <script src="./js/head_footer.js"></script>
+    <script src="./js/cardStore.js"></script>
+    <script src="./js/products.js"></script>
+    <script src="./js/createOneProduct.js"></script>
+    <script src="./js/miniCart.js"></script>
+    <script src="./js/authorization.js"></script>
+    <script src="./js/search.js"></script>
+</body>
+
+</html>

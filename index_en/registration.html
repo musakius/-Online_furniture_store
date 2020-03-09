@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/registration.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="top_ponnel"></nav>
+        <header></header>
+        <nav class="nav_bar"></nav>
+        <section class="container_registration">
+            <div class="center">
+                <h2 id="regist">Registration</h2>
+                <div class="content" id="content_user">
+                    <div class="avatar">
+                        <img src="../img/user-avatar-png-7.png">
+                    </div>
+                    <form class="form" onsubmit="return false;">
+                        <label><span>Login:</span><input id="input_login" type="text" name="login" placeholder="Login"
+                                required></label>
+                        <label><span>Password:</span><input id="input_password" type="text" name="password"
+                                placeholder="Password" required></label>
+                        <input id="btn_primary" type="submit" value="Продолжить" class="btn_primary">
+                    </form>
+                </div>
+                <div class="finish">
+                    <h2>You have successfully registered!</h2>
+                    <p>Your Personal account Was successfully created.</p>
+                    <a href=../authorization.html">Go to authorization</a>
+                </div>
+            </div>
+        </section>
+        <footer></footer>
+    </div>
+    <script src="../js_en/head_footer.js"></script>
+    <script src="../js_en/cardStore.js"></script>
+    <script src="../js_en/products.js"></script>
+    <script src="../js_en/createOneProduct.js"></script>
+    <script src="../js_en/miniCart.js"></script>
+    <script src="../js_en/registration.js"></script>
+    <script src="../js_en/search.js"></script>
+</body>
+
+</html>

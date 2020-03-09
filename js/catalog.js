@@ -1,335 +1,106 @@
-const catalogProduct = [
-    {
-        id: 'id_1',
-        name: 'Ящик Optima',
-        price: '72',
-        description: `Ящики модульные для детской! Компактно вместят детские игрушки, 
-        материалы для творчества, книг и многое другое.Они легко и просто ...`,
-        img: './img/optima.jpg',
-        category: 'box',
-        box: 'modular',
-        frame: 'yes'
-    },
-    {
-        id: 'id_2',
-        name: 'Ящик Maxi',
-        price: '80',
-        description: `Ящики модульные для детской! Компактно вместят детские игрушки, 
-        материалы для творчества, книг и многое другое.Они легко и просто ...`,
-        img: './img/maxi.jpg',
-        category: 'box',
-        box: 'modular',
-        frame: 'yes'
-    },
-    {
-        id: 'id_3',
-        name: 'Крышка для ящиков',
-        price: '26',
-        description: `Ящики модульные для детской! Компактно вместят детские игрушки, 
-        материалы для творчества, книг и многое другое.Они легко и просто ...`,
-        img: './img/krisha.jpg',
-        category: 'box',
-        cap: 'yes',
-        capModular: 'yes' 
-    },
-    {
-        id: 'id_4',
-        name: 'Ящик Mini',
-        price: '60',
-        description: `Ящики модульные для детской! Компактно вместят детские игрушки, 
-        материалы для творчества, книг и многое другое.Они легко и просто ...`,
-        img: './img/mini.png',
-        category: 'box',
-        box: 'modular',
-        frame: 'no'
-    },
-    {
-        id: 'id_5',
-        name: 'Ящик Mini с делениями',
-        price: '66',
-        description: `Ящики модульные для детской! Компактно вместят детские игрушки, 
-        материалы для творчества, книг и многое другое.Они легко и просто ...`,
-        img: './img/minidel.jpg',
-        category: 'box',
-        box: 'modular',
-        divisions: 'yes',
-        frame: 'no'
-    },
-    {
-        id: 'id_6',
-        name: 'Крышка для Mini',
-        price: '14',
-        description: `Ящики модульные для детской! Компактно вместят детские игрушки, 
-        материалы для творчества, книг и многое другое.Они легко и просто ...`,
-        img: './img/krishmini.jpg',
-        category: 'box',
-        cap: 'yes',
-        capGrif: 'yes' 
-    },
-    {
-        id: 'id_7',
-        name: 'Ящик Huge',
-        price: '70',
-        description: `Ящики модульные для детской! Компактно вместят детские игрушки, 
-        материалы для творчества, книг и многое другое.Они легко и просто ...`,
-        img: './img/huge.jpg',
-        category: 'box',
-        box: 'modular',
-        frame: 'yes'
-    },
-    {
-        id: 'id_5',
-        name: 'Ящик Huge с делениями',
-        price: '80',
-        description: `Ящики модульные для детской! Компактно вместят детские игрушки, 
-        материалы для творчества, книг и многое другое.Они легко и просто ...`,
-        img: './img/hugedel.jpg',
-        category: 'box',
-        box: 'modular',
-        divisions: 'yes',
-        frame: 'yes'
-    },
-    {
-        id: 'id_8',
-        name: 'Крышка для Huge',
-        price: '26',
-        description: `Ящики модульные для детской! Компактно вместят детские игрушки, 
-        материалы для творчества, книг и многое другое.Они легко и просто ...`,
-        img: './img/krishhuge.jpg',
-        category: 'box',
-        cap: 'yes',
-        capGrif: 'yes' 
-    },
-    {
-        id: 'id_9',
-        name: 'Ящик Bearsbox',
-        price: '100',
-        description: `Ящики модульные для детской! Компактно вместят детские игрушки, 
-        материалы для творчества, книг и многое другое.Они легко и просто ...`,
-        img: './img/bearsbox.png',
-        category: 'box',
-        rest: 'yes',
-        frame: 'no'
-    },
-    {
-        id: 'id_10',
-        name: 'Ящик Pine Box',
-        price: '29',
-        description: `Ящики модульные для детской! Компактно вместят детские игрушки, 
-        материалы для творчества, книг и многое другое.Они легко и просто ...`,
-        img: './img/Pine.jpg',
-        category: 'box',
-        rest: 'yes',
-        frame: 'yes'
-    },
-    {
-        id: 'id_11',
-        name: 'Карандашница - Домик',
-        price: '36',
-        description: `Ящики модульные для детской! Компактно вместят детские игрушки, 
-        материалы для творчества, книг и многое другое.Они легко и просто ...`,
-        img: './img/karandasnica.jpg',
-        category: 'rest',
-        holder: 'yes'
-    },
-    {
-        id: 'id_11',
-        name: 'Карандашница - Бамбуковая',
-        price: '30',
-        description: `Ящики модульные для детской! Компактно вместят детские игрушки, 
-        материалы для творчества, книг и многое другое.Они легко и просто ...`,
-        img: './img/karandasnica_3.jpg',
-        category: 'rest',
-        holder: 'yes'
-    },
-    {
-        id: 'id_11',
-        name: 'Карандашница - 5 пород',
-        price: '45',
-        description: `Ящики модульные для детской! Компактно вместят детские игрушки, 
-        материалы для творчества, книг и многое другое.Они легко и просто ...`,
-        img: './img/karandashnica_5.jpg',
-        category: 'rest',
-        holder: 'yes'
-    },
-    {
-        id: 'id_14',
-        name: 'Стеллаж открытый',
-        price: '90',
-        description: `Ящики модульные для детской! Компактно вместят детские игрушки, 
-        материалы для творчества, книг и многое другое.Они легко и просто ...`,
-        img: './img/open.jpg',
-        category: 'rack',
-        open: 'yes',
-        bezdel: 'yes'
-    },
-    {
-        id: 'id_15',
-        name: 'Стеллаж с делениями',
-        price: '100',
-        description: `Ящики модульные для детской! Компактно вместят детские игрушки, 
-        материалы для творчества, книг и многое другое.Они легко и просто ...`,
-        img: './img/sdel.jpg',
-        category: 'rack',
-        sdel: 'yes'
-    },
-    {
-        id: 'id_16',
-        name: 'Стеллаж закрытый',
-        price: '94',
-        description: `Ящики модульные для детской! Компактно вместят детские игрушки, 
-        материалы для творчества, книг и многое другое.Они легко и просто ...`,
-        img: './img/clouse.jpg',
-        category: 'rack',
-        clouse: 'yes',
-        bezdel: 'yes'
-    },
-    {
-        id: 'id_12',
-        name: 'Полка для книг Book-floor',
-        price: '120',
-        description: `Ящики модульные для детской! Компактно вместят детские игрушки, 
-        материалы для творчества, книг и многое другое.Они легко и просто ...`,
-        img: './img/book_floor.png',
-        category: 'bookshelf',
-        floor: 'yes',
-        height: '67'
-    },
-    {
-        id: 'id_13',
-        name: 'Полка для книг Book-wall',
-        price: '110',
-        description: `Ящики модульные для детской! Компактно вместят детские игрушки, 
-        материалы для творчества, книг и многое другое.Они легко и просто ...`,
-        img: './img/book_wall.png',
-        category: 'bookshelf',
-        wall: 'yes',
-        height: '120'
-    },
-    {
-        id: 'id_17',
-        name: 'Грифельная доска-домик',
-        price: '70',
-        description: `Ящики модульные для детской! Компактно вместят детские игрушки, 
-        материалы для творчества, книг и многое другое.Они легко и просто ...`,
-        img: './img/grif.jpg',
-        category: 'griffin',
-        size: 'big',
-        shelf: 'yes'
-    },
-    {
-        id: 'id_18',
-        name: 'Грифельная доска-ракета',
-        price: '70',
-        description: `Ящики модульные для детской! Компактно вместят детские игрушки, 
-        материалы для творчества, книг и многое другое.Они легко и просто ...`,
-        img: './img/raketa.jpg',
-        category: 'griffin',
-        size: 'big',
-        shelf: 'no'
-    },
-    {
-        id: 'id_16',
-        name: 'Грифильная доска - звезда',
-        price: '100',
-        description: `Ящики модульные для детской! Компактно вместят детские игрушки, 
-        материалы для творчества, книг и многое другое.Они легко и просто ...`,
-        img: './img/grifStarbd.jpg',
-        category: 'griffinM',
-        size: 'little',
-        shelf: 'no'
-    },
-    {
-        id: 'id_17',
-        name: 'Грифильная доска - шар',
-        price: '46',
-        description: `Ящики модульные для детской! Компактно вместят детские игрушки, 
-        материалы для творчества, книг и многое другое.Они легко и просто ...`,
-        img: './img/grifShar.jpg',
-        category: 'griffin',
-        size: 'little',
-        shelf: 'no'
-    },
-    {
-        id: 'id_17',
-        name: 'Грифильная доска - сова',
-        price: '46',
-        description: `Ящики модульные для детской! Компактно вместят детские игрушки, 
-        материалы для творчества, книг и многое другое.Они легко и просто ...`,
-        img: './img/grisSova.jpg',
-        category: 'griffinM',
-        size: 'little',
-        shelf: 'no'
-    },
-    {
-        id: 'id_13',
-        name: 'Грифельная доска-класик',
-        price: '50',
-        description: `Ящики модульные для детской! Компактно вместят детские игрушки, 
-        материалы для творчества, книг и многое другое.Они легко и просто ...`,
-        img: './img/grifclas.jpg',
-        category: 'griffin',
-        size: 'big',
-        shelf: 'yes'
-    },
-    {
-        id: 'id_13',
-        name: 'Игрушечный буфет',
-        price: '40',
-        description: `Ящики модульные для детской! Компактно вместят детские игрушки, 
-        материалы для творчества, книг и многое другое.Они легко и просто ...`,
-        img: './img/bufet.jpg',
-        category: 'rest',
-        toy_furniture: 'yes'
-    },
-    {
-        id: 'id_14',
-        name: 'Игрушечная кровать ',
-        price: '50',
-        description: `Ящики модульные для детской! Компактно вместят детские игрушки, 
-        материалы для творчества, книг и многое другое.Они легко и просто ...`,
-        img: './img/krovat.jpg',
-        category: 'rest',
-        toy_furniture: 'yes'
-    },
-    {
-        id: 'id_15',
-        name: 'Игрушечные стол, стулья',
-        price: '30',
-        description: `Ящики модульные для детской! Компактно вместят детские игрушки, 
-        материалы для творчества, книг и многое другое.Они легко и просто ...`,
-        img: './img/stol.jpg',
-        category: 'rest',
-        toy_furniture: 'yes'
-    },
-    {
-        id: 'id_20',
-        name: 'Колесики',
-        price: '15',
-        description: `Ящики модульные для детской! Компактно вместят детские игрушки, 
-        материалы для творчества, книг и многое другое.Они легко и просто ...`,
-        img: './img/kalesa.png',
-        category: 'rest',
-        furniture: 'yes'
-    },
-    {
-        id: 'id_21',
-        name: 'Подвесы мебельные',
-        price: '5',
-        description: `Ящики модульные для детской! Компактно вместят детские игрушки, 
-        материалы для творчества, книг и многое другое.Они легко и просто ...`,
-        img: './img/pod.jpg',
-        category: 'rest',
-        furniture: 'yes'
-    },
-    {
-        id: 'id_19',
-        name: 'Мелки',
-        price: '5',
-        description: `Ящики модульные для детской! Компактно вместят детские игрушки, 
-        материалы для творчества, книг и многое другое.Они легко и просто ...`,
-        img: './img/melki.jpg',
-        category: 'rest',
-        crayons: 'yes'
+class AllProducts {
+    constructor(containerProducts, catalogCounter, catalogProduct) {
+        this.containerProducts = document.querySelector(containerProducts);
+        this.catalogCounter = document.querySelector(catalogCounter);
+        this.catalogProduct = catalogProduct;
+        this.createProduct();
     }
-]
+    createProduct() {
+        let wrapper = document.createElement("slot");
+        let products = cardStore.getProduct();
+        for (let i = 0; i < this.catalogProduct.length; i++) {
+
+            let index = products.indexOf(this.catalogProduct[i].id);
+            let activeText;
+
+            if (index === -1) {
+                activeText = 'Добавить';
+            } else {
+                activeText = 'Удалить';
+            }
+
+            let item = createOneProduct.getProductItem({
+                tagName: "div",
+                className: "item"
+            })
+            let name = createOneProduct.getProductItem({
+                tagName: "a",
+                className: "name",
+                textName: this.catalogProduct[i].name
+            })
+            let img = createOneProduct.getProductItem({
+                tagName: "img",
+                className: "img",
+                backgroundImg: this.catalogProduct[i].img
+            })
+            let description = createOneProduct.getProductItem({
+                tagName: "p",
+                className: "description",
+                textName: this.catalogProduct[i].description
+            })
+            let price = createOneProduct.getProductItem({
+                tagName: "div",
+                className: "price",
+                textName: `Цена: ${this.catalogProduct[i].price} BYN`
+            })
+            let btn = createOneProduct.getProductItem({
+                tagName: 'button',
+                className: 'btn',
+                textName: activeText,
+                id: this.catalogProduct[i].id
+            });
+            let btn2 = createOneProduct.getProductItem({
+                tagName: "button",
+                className: "btn2",
+                textName: "Подробнее"
+            })
+
+            btn.addEventListener('click', function () {
+                let id = this.getAttribute('id');
+                let result = cardStore.putProduct(id);
+                allProducts.catalogCounter.innerHTML = JSON.parse(localStorage.getItem('CardStore'))
+                if (result.statusProduct) {
+                    this.innerHTML = 'Удалить';
+                    localStorage.setItem('CaunterStore'+id, JSON.stringify((cardStore.getProduct().filter(item => item == id).length)));
+                } else {
+                    this.innerHTML = 'Добавить';
+                    localStorage.removeItem('CaunterStore'+id, JSON.stringify((cardStore.getProduct().filter(item => item == id).length)));
+                }
+            })
+            
+            btn2.addEventListener('click', function () {
+                localStorage.setItem('id_tavar', JSON.stringify(allProducts.catalogProduct[i].id));
+                document.location.href = "./product.html";
+            })
+
+            function addTawar() {
+                wrapper.appendChild(item).append(img, name, description, price, btn, btn2);
+            }
+
+            function categorySelection() {
+                addTawar();
+                categories.addEventListener('click', function (event) {
+                    item.remove();
+                    if (event.target && event.target.id == catalogProduct[i].category) {
+                        addTawar();
+                    }
+                    if (event.target && event.target.id == catalogProduct[i].subcategory_1) {
+                        addTawar();
+                    }
+                    if (event.target && event.target.id == catalogProduct[i].subcategory_2) {
+                        addTawar();
+                    }
+                    if (event.target && event.target.innerHTML == 'Выберите категорию') {
+                        addTawar();
+                    }
+                });
+            }
+            categorySelection();
+        }
+        this.containerProducts.appendChild(wrapper);
+    }
+}
+
+let allProducts = new AllProducts('.container_product', '.quantity', catalogProduct);
+
+

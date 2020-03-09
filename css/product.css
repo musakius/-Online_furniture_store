@@ -1,0 +1,197 @@
+.card_product .content {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card_product .content .images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    padding-top: 35px;
+}
+.card_product .content .images .hed_img img{
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    min-width: 300px;
+}
+.card_product .content .images .rest_img{
+    display: flex;
+    justify-content: center;
+}
+.card_product .content .images .rest_img img{
+    cursor: pointer;
+    width: 66px;
+    border: 1px solid #666;
+    margin: 10px;
+}
+.card_product .content .purchase {
+    padding-top: 10px;
+    width: 30%;
+}
+.card_product .content .purchase .star {
+    cursor: pointer;
+    float: right;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid #666;
+    border-radius: 30px;
+    outline: none;
+}
+.card_product .content .purchase .star i:hover{
+    color: rgb(216, 216, 58);
+}
+.card_product .content .purchase p,
+.card_product .content .info p {
+    font-size: 27px;
+    color: #444;
+    font-weight: 500;
+    margin: 30px 10px 40px 10px;
+}
+.card_product .content .purchase .har {
+    width: 70%;
+    margin: 10px;
+}
+.card_product .content .purchase li {
+    width: 100%;
+    margin: 20px 10px;
+    font-size: 14px;
+    color: #444;
+    font-weight: 500;
+}
+.card_product .content .purchase li span {
+    display: inline-block;
+    width: 40%;
+}
+.card_product .content .purchase .col {
+    width: 50%;
+    display: inline-block;
+    margin: 10px;
+    font-size: 14px;
+    color: #444;
+    font-weight: 500;
+}
+.card_product .content .purchase i {
+    cursor: pointer;
+    color: #73c0c1;
+    font-size: 20px;
+}
+.card_product .content .purchase input {
+    width: 50px;
+    border: 1px solid #666;
+    border-radius: 5px;
+    font-size: 20px;
+    outline: none;
+}
+.card_product .content .purchase .bay {
+    display: block;
+    width: 96%;
+    margin: 0 auto;
+    background-color: #73c0c1;
+    color: #fff;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid #000;
+    border-radius: 20px;
+    margin-top: 20px;
+    height: 40px;
+    cursor: pointer;
+}
+.card_product .content .info {
+    width: 70%;
+}
+.card_product .content .info div{
+    width: 100%;
+    border-top: 0.5px solid #ddd;
+}
+.card_product .content .info p {
+    display: inline-block;
+    width: 15%;
+    margin-bottom: 5px;
+}
+.card_product .content .info div p{
+    width: 100%;
+    margin: 40px 10px 10px 10px;
+    font-size: 16px;
+    color: #444;
+    font-weight: 500;
+}
+.card_product .content .info .block_reviews {
+    width: 100%;
+}
+.card_product .content .info .block_reviews .name input,
+.card_product .content .info .block_reviews .text textarea {
+    margin-left: 10px;
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    outline: none;
+}
+.card_product .content .info .block_reviews .text textarea {
+    height: 110px;
+}
+.card_product .content .info .block_reviews .name span,
+.card_product .content .info .block_reviews .text span {
+    margin: 30px 10px 10px 10px;
+    display: block;
+    border: none;
+}
+.card_product .content .info .block_reviews .name,
+.card_product .content .info .block_reviews .text {
+    border: none;
+}
+.card_product .content .info .block_reviews button {
+    margin-top: 30px;
+    margin-right: -20px;
+    float: right;
+    background-color: #73c0c1;
+    color: #fff;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid #000;
+    border-radius: 20px;
+    margin-top: 20px;
+    height: 36px;
+    width: 150px;
+    cursor: pointer;
+}
+.card_product .content .info .spisok_reviews {
+    margin: 10px;
+    width: 100%;
+}
+.card_product .content .info .spisok_reviews li {
+    padding-top: 10px;
+    margin: 30px 0;
+    border: 1px solid #ccc;
+}
+.card_product .content .info .spisok_reviews li span{
+    margin:  0 10px;
+    font-weight: 700;
+    color: #666;
+    font-size: 12px;
+}
+.card_product .content .info .spisok_reviews li .data{
+    float: right;
+}
+.card_product .content .info .spisok_reviews li p {
+    width: 100%;
+    font-weight: 400;
+    color: #666;
+    font-size: 12px;
+    margin: 20px 10px 30px 10px;
+}
+#op, #ot {
+    cursor: pointer;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px 15px;
+    background-color: #e9e9e9;
+    margin-bottom: 0px;
+    margin-right: 0px;
+}
+#ot {
+    background-color: #ffffff;
+}

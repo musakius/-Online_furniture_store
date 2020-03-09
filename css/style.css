@@ -54,6 +54,9 @@ table {
 	max-width: 1080px;
 	margin: 0 auto;
 }
+a{
+    cursor: pointer;
+}
 h3 {
     font-size: 21px;
     color: #444;
@@ -90,6 +93,7 @@ h2 {
     font-size: 14px;
     margin-left: -30px;
     padding: 5px;
+    color: #FFF;
 }
 
 .top_ponnel {
@@ -133,6 +137,15 @@ h2 {
 .top_ponnel .block_top ul .li_leng div a:hover,
 .top_ponnel .block_top ul .li_user div a:hover {
     background-color: #3587a0;
+}
+.top_ponnel .block_top ul li a{
+    color: #fff;
+}
+.top_ponnel .block_top ul li a:hover{
+    color: #333;
+}
+header {
+    max-height: 123px;
 }
 .block_head {
     display: flex;
@@ -189,19 +202,19 @@ h1 {
     width: 100%;
     line-height: 40px;
 }
-.ul_bar {
+.nav_bar ul {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     width: 68%;
 }
-.ul_bar li {
+.nav_bar ul li {
     cursor: pointer;
     width: 130px;
     text-align: center;
     list-style-type: none; 
 }
-.ul_bar a {
+.nav_bar ul li a {
     display: block;
     height: 100%;
     font-size: 18px;
@@ -209,7 +222,7 @@ h1 {
     color: #000;
     text-transform: uppercase;
 }
-.ul_bar li:hover{
+.nav_bar ul li:hover{
     background-color: #dadada;
 }
 
@@ -418,3 +431,70 @@ footer .content .svg div {
 }
 /* ///////////////////////////////////// */
 
+
+.container-cart {
+    display: none;
+    position: absolute;
+    top: 100px;
+    right: 6.5%;
+    width: 32%;
+    background-color: #fff;
+    border: 2px solid #73c0c1;
+    border-radius: 5px;
+}
+.container-cart ul li {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+.container-cart ul li img {
+    width: 57px;
+}
+.container-cart ul li .name {
+    width: 203px;
+    font-weight: 600;
+    color: #4a8a8b;
+    line-height: 58px;
+    font-size: 14px;
+}
+.container-cart ul li .counter {
+    font-weight: 400;
+    color: #000000;
+    line-height: 58px;
+    font-size: 14px;
+}
+.container-cart ul li .price {
+    width: 70px;
+    margin-left: 20px;
+    font-weight: 600;
+    color: #4a8a8b;
+    line-height: 58px;
+    font-size: 16px;
+}
+.container-cart ul li i {
+    cursor: pointer;
+    color: brown;
+}
+.container-cart .text {
+    text-align: right;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 15px 35px;
+}
+.container-cart .block_link {
+    padding: 15px;
+    text-align: right;
+    color: #fff;
+    background-color: #73c0c1;
+}
+.container-cart .block_link a {
+    padding-left: 15px;
+    font-size: 12px;
+    color: #fff;
+}
+.container-cart .block_link a:hover {
+    color: #333;
+}
