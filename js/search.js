@@ -84,6 +84,6 @@ class Search {
 let search = new Search('.content', catalogProduct);
 });
 
-if (location.pathname !== '/D:/Front-end/Course_work_2/search.html') {
+if (location.pathname !== 'https://github.com/musakius/Course_work_2/edit/master/js/search.js') {
   localStorage.removeItem('id_search');
 }
