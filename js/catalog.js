@@ -73,6 +73,16 @@ class AllProducts {
                 document.location.href = "./product.html";
             })
 
+            img.addEventListener('click', function () {
+                localStorage.setItem('id_tavar', JSON.stringify(allProducts.catalogProduct[i].id));
+                document.location.href = "./product.html";
+            })
+
+            name.addEventListener('click', function () {
+                localStorage.setItem('id_tavar', JSON.stringify(allProducts.catalogProduct[i].id));
+                document.location.href = "./product.html";
+            })
+
             function addTawar() {
                 wrapper.appendChild(item).append(img, name, description, price, btn, btn2);
             }
