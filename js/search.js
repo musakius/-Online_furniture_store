@@ -84,6 +84,11 @@ class Search {
 let search = new Search('.content', catalogProduct);
 });
 
-if (location.pathname !== '/D:/Front-end/Course_work_2/search.html') {
-  localStorage.removeItem('id_search');
+
+let host = location.pathname.replace(/\Course_work_2.*/, '');
+    host = host + 'Course_work_2/search.html';
+
+if (location.pathname !== host) {
+    localStorage.removeItem('id_search');
 }
+

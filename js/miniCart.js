@@ -31,12 +31,16 @@ class MiniCart {
         text.innerHTML = sum.innerHTML;
 
         function currentSumCart() { // отправляет данные в миниатюру и корзину
-            if (location.pathname == '/D:/Front-end/Course_work_2/catalog.html') {//путь должен вести к файлу 'catalog.html'
+            let host = location.pathname.replace(/\Course_work_2.*/, '');
+                host = host + 'Course_work_2/catalog.html';
+
+            if (location.pathname == host) {
                 let but = document.querySelectorAll('.btn');
                 for (let i = 0; i < catalogProduct.length; i++) {
                     but[i].addEventListener('click', function () {
                         let id = this.getAttribute('id');
                         let index = cardStore.getProduct().indexOf(minicart.catalogProduct[i].id);
+
                         if (index === -1) {
                             text.innerHTML = `(${+(text.innerHTML.replace(/\D+/g, '')) - minicart.catalogProduct[i].price}) BYN`;
                             localStorage.removeItem('Sum' + id, JSON.stringify(catalogProduct[i].price));

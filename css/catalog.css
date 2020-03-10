@@ -3,7 +3,6 @@ label {
 }
 .container_catalog .catalog {
     display: flex;
-    border-top: 1px solid #ddd;
 }
 .container_catalog .catalog .container_search {
     width: 25%;
