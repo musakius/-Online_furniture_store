@@ -84,18 +84,12 @@ class Search {
 let search = new Search('.content', catalogProduct);
 });
 
-<<<<<<< HEAD
 
-=======
->>>>>>> b5a7133f77d520d1d014a91a309d17a12ee6dd65
 let host = location.pathname.replace(/\Course_work_2.*/, '');
     host = host + 'Course_work_2/search.html';
 
 if (location.pathname !== host) {
     localStorage.removeItem('id_search');
-<<<<<<< HEAD
 }
-=======
 
->>>>>>> b5a7133f77d520d1d014a91a309d17a12ee6dd65
 
