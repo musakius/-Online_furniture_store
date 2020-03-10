@@ -3,6 +3,7 @@ function addHeaderAndFooter() {
     let header = document.querySelector('header');
     let navTwo = document.querySelectorAll('nav')[1];
     let footer = document.querySelector('footer');
+    let dialog = document.querySelector('.dialog');
 
     navOne.innerHTML = `<div class="center">
                             <div class="block_top">
@@ -33,7 +34,7 @@ function addHeaderAndFooter() {
     header.innerHTML = `<div class="center">
                             <div class="block_head">
                                 <div>
-                                    <img class="logo" src="../img/logo.png" alt="logo">
+                                    <a href="./index.html"><img class="logo" src="./img/logo.png" alt="logo"></a>
                                 </div>
                                 <div class="text_head">
                                     <h1>Workshop of children's furniture made of wood for storing toys and not only!</h1>
@@ -85,8 +86,43 @@ function addHeaderAndFooter() {
                                 </a>
                             </div>
                         </div>`;
+    dialog.innerHTML = `<div id="win" class="win" style="display: none">
+                            <button class="close_window"><i class="fas fa-times"></i></button>
+                            <div class="dialog_text"></div>
+                            <input class="input_dialog" type="text" required>
+                            <button class="send"><i class="fas fa-arrow-up"></i></button>
+                        </div>
+                        <button class="show"><i class="fas fa-comments"></i></button>`
 }
 addHeaderAndFooter();
+
+function popupWindow() {
+    let input = document.querySelector('.input_dialog');
+    let text = document.querySelector('.dialog_text');
+    let send = document.querySelector('.send');
+
+    document.querySelector('.show').onclick = function () {
+        win.style.display = "block";
+    };
+    document.querySelector('.close_window').onclick = function () {
+        win.style.display = "none";
+    };
+    send.onclick = function () {
+        let p_user = document.createElement('span');
+        p_user.className = "p_user";
+        p_user.innerHTML = input.value;
+        let p_server = document.createElement('string');
+        p_server.className = "p_server";
+        p_server.innerHTML = input.value;
+
+        text.appendChild(p_user);
+
+        setTimeout(function () {
+            text.appendChild(p_server);
+        }, 2000);
+    }
+}
+popupWindow();
 
 function choice() {
     let leng = document.querySelector('#choice_leng');

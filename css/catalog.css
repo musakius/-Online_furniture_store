@@ -70,6 +70,7 @@ label {
 }
 .container_catalog .catalog .container_product .item .img {
     width: 260px;
+    cursor: pointer;
 }
 .container_catalog .catalog .container_product .item .name {
     font-family: inherit;

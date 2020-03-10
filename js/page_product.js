@@ -8,6 +8,8 @@ class CardProducts {
         let rest_img = document.querySelector('.rest_img');
         let add_purchase = document.querySelector('.add_purchase');
         let block_description = document.querySelector('.block_description');
+        let crumb = document.querySelector('.crumb');
+        crumb.innerHTML = this.catalogProduct[getTavar() - 1].name;
 
         function getTavar() {
             return JSON.parse(localStorage.getItem('id_tavar'));
