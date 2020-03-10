@@ -31,10 +31,10 @@ class MiniCart {
         text.innerHTML = sum.innerHTML;
 
         function currentSumCart() { // отправляет данные в миниатюру и корзину
-            let host = location.pathname.replace(/\Course_work_2.*/, '');
+            let host = location.href.replace(/\Course_work_2.*/, '');
                 host = host + 'Course_work_2/catalog.html';
 
-            if (location.pathname == host) {
+            if (location.href == host) {
                 let but = document.querySelectorAll('.btn');
                 for (let i = 0; i < catalogProduct.length; i++) {
                     but[i].addEventListener('click', function () {

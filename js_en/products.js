@@ -25,7 +25,7 @@ const catalogProduct = [
     {
         id: '2',
         name: 'Box Maxi',
-        price: 80,
+        price: ((80 / 100) * 80).toFixed(0),
         depth: '34 cm.',
         width: '32 cm.',
         height: '37 cm.',
@@ -48,7 +48,7 @@ const catalogProduct = [
     {
         id: '3',
         name: 'Lid for drawers',
-        price: 26,
+        price: ((26 / 100) * 80).toFixed(0),
         depth: '34 cm.',
         width: '32 cm.',
         height: '5 cm.',
@@ -68,7 +68,7 @@ const catalogProduct = [
     {
         id: '4',
         name: 'Box Mini',
-        price: 60,
+        price: ((60 / 100) * 80).toFixed(0),
         depth: '34 cm.',
         width: '32 cm.',
         height: '12,5 cm.',
@@ -89,7 +89,7 @@ const catalogProduct = [
     {
         id: '5',
         name: 'Mini box with divisions',
-        price: 66,
+        price: ((66 / 100) * 80).toFixed(0),
         depth: '34 cm.',
         width: '32 cm.',
         height: '12,5 cm.',
@@ -110,7 +110,7 @@ const catalogProduct = [
     {
         id: '6',
         name: 'Cover for Mini',
-        price: 14,
+        price: ((14 / 100) * 80).toFixed(0),
         depth: '34 cm.',
         width: '32 cm.',
         height: '1 cm.',
@@ -130,7 +130,7 @@ const catalogProduct = [
     {
         id: '7',
         name: 'Box Huge',
-        price: 70,
+        price: ((70 / 100) * 80).toFixed(0),
         depth: '60 cm.',
         width: '60 cm.',
         height: '15 cm.',

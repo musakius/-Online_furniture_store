@@ -1,4 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
 class Search {
     constructor(containerSearch, catalogProduct) {
         this.containerSearch = document.querySelector(containerSearch);
@@ -60,7 +59,7 @@ class Search {
                     
             a.addEventListener('click', function () {
                 localStorage.setItem('id_tavar', JSON.stringify(productsCart[i].id));
-                a.href = "../product.html";
+                a.href = "./product.html";
             })
         }
         this.containerSearch.appendChild(wrapper);
@@ -82,7 +81,7 @@ class Search {
 }
 
 let search = new Search('.content', catalogProduct);
-});
+
 
 
 let host = location.href.replace(/\Course_work_2.*/, '');

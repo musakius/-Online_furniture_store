@@ -1,20 +1,31 @@
 class CardProducts {
-    constructor(catalogProduct) {
+    constructor(catalogCounter, catalogProduct) {
+        this.catalogCounter = document.querySelector(catalogCounter);
         this.catalogProduct = catalogProduct;
         this.createProduct();
     }
     createProduct() {
+        let but = document.querySelector('.bay');
         let hed_img = document.querySelector('.hed_img');
         let rest_img = document.querySelector('.rest_img');
         let add_purchase = document.querySelector('.add_purchase');
         let block_description = document.querySelector('.block_description');
+        let id = this.catalogProduct[getTavar() - 1].id
         let crumb = document.querySelector('.crumb');
-        crumb.innerHTML = this.catalogProduct[getTavar() - 1].name;
+            crumb.innerHTML = this.catalogProduct[getTavar() - 1].name;
+
+        let index = cardStore.getProduct().indexOf(id);
+
+            if (index === -1) {
+                but.innerHTML = 'Добавить в корзину';
+            } else {
+                but.innerHTML = 'Удалить из корзины';
+            }
 
         function getTavar() {
             return JSON.parse(localStorage.getItem('id_tavar'));
         }
-
+        
         let img = createOneProduct.getProductItem({
             tagName: "img",
             backgroundImg: this.catalogProduct[getTavar() - 1].img
@@ -76,6 +87,20 @@ class CardProducts {
             textName: `${this.catalogProduct[getTavar() - 1].description}`
         });
 
+        but.addEventListener('click', function () {
+            
+            let index = cardStore.getProduct().indexOf(id);
+            cardStore.putProduct(id);
+            cardProducts.catalogCounter.innerHTML = JSON.parse(localStorage.getItem('CardStore'))
+            if (index === -1) {
+                but.innerHTML = 'Удалить из корзины';
+                localStorage.setItem('CaunterStore'+id, JSON.stringify((cardStore.getProduct().filter(item => item == id).length)));
+            } else{
+                but.innerHTML = 'Добавить в корзину';
+                localStorage.removeItem('CaunterStore'+id, JSON.stringify((cardStore.getProduct().filter(item => item == id).length)));
+            }
+        })
+
         function addTawar() {
             hed_img.appendChild(img);
             rest_img.append(img1, img2, img3, img4);
@@ -87,4 +112,4 @@ class CardProducts {
     }
 }
 
-let cardProducts = new CardProducts(catalogProduct);
+let cardProducts = new CardProducts('.quantity', catalogProduct);

@@ -86,9 +86,10 @@ let search = new Search('.content', catalogProduct);
 });
 
 let host = location.href.replace(/\Course_work_2.*/, '');
-    host = host + 'Course_work_2/search.html';
+    host = host + 'Course_work_2/index_en/search.html';
     console.log(host)
     console.log(location.href)
 
 if (location.href !== host) {
     localStorage.removeItem('id_search');
+}

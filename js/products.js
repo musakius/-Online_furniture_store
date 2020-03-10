@@ -25,7 +25,7 @@ const catalogProduct = [
     {
         id: '2',
         name: 'Ящик Maxi',
-        price: 80,
+        price: ((80 / 100) * 80).toFixed(0),
         depth: '34 см.',
         width: '32 см.',
         height: '37 см.',
@@ -48,7 +48,7 @@ const catalogProduct = [
     {
         id: '3',
         name: 'Крышка для ящиков',
-        price: 26,
+        price: ((26 / 100) * 80).toFixed(0),
         depth: '34 см.',
         width: '32 см.',
         height: '5 см.',
@@ -68,7 +68,7 @@ const catalogProduct = [
     {
         id: '4',
         name: 'Ящик Mini',
-        price: 60,
+        price: ((60 / 100) * 80).toFixed(0),
         depth: '34 см.',
         width: '32 см.',
         height: '12,5 см.',
@@ -89,7 +89,7 @@ const catalogProduct = [
     {
         id: '5',
         name: 'Ящик Mini с делениями',
-        price: 66,
+        price: ((66 / 100) * 80).toFixed(0),
         depth: '34 см.',
         width: '32 см.',
         height: '12,5 см.',
@@ -110,7 +110,7 @@ const catalogProduct = [
     {
         id: '6',
         name: 'Крышка для Mini',
-        price: 14,
+        price: ((14 / 100) * 80).toFixed(0),
         depth: '34 см.',
         width: '32 см.',
         height: '1 см.',
@@ -130,7 +130,7 @@ const catalogProduct = [
     {
         id: '7',
         name: 'Ящик Huge',
-        price: 70,
+        price: ((70 / 100) * 80).toFixed(0),
         depth: '60 см.',
         width: '60 см.',
         height: '15 см.',
