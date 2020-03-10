@@ -84,16 +84,10 @@ class Search {
 let search = new Search('.content', catalogProduct);
 });
 
-<<<<<<< HEAD
-
 let host = location.pathname.replace(/\Course_work_2.*/, '');
     host = host + 'Course_work_2/search.html';
 
 if (location.pathname !== host) {
     localStorage.removeItem('id_search');
-=======
-if (location.pathname !== 'https://musakius.github.io/Course_work_2/search.html') {
-  localStorage.removeItem('id_search');
->>>>>>> 4e0b5097cba0c568ff090d64c7be2cb4e93f2dc3
-}
+
 
