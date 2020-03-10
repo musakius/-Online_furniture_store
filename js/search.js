@@ -94,3 +94,4 @@ if (location.href !== host) {
     localStorage.removeItem('id_search');
 }
 
+

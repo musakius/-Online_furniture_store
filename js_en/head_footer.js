@@ -34,7 +34,11 @@ function addHeaderAndFooter() {
     header.innerHTML = `<div class="center">
                             <div class="block_head">
                                 <div>
+<<<<<<< HEAD
                                     <a href="./index.html"><img class="logo" src="../img/logo.png" alt="logo"></a>
+=======
+                                    <a href="./index.html"><img class="logo" src="./img/logo.png" alt="logo"></a>
+>>>>>>> 46e49154998d41f036516f3e081dcef24bcea319
                                 </div>
                                 <div class="text_head">
                                     <h1>Workshop of children's furniture made of wood for storing toys and not only!</h1>
