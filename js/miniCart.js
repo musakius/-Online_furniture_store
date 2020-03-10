@@ -22,10 +22,13 @@ class MiniCart {
 
         let sum = document.querySelector('.sum');
         sum.innerHTML = JSON.parse(localStorage.getItem('total'));
+        if(sum.innerHTML == null){sum.innerHTML = 0};
+        sum.innerHTML = +sum.innerHTML.replace(/\D+/g, '');
+        sum.innerHTML = `(${sum.innerHTML}) BYN`;
 
         let text = document.createElement('p');
         text.className = "text";
-        text.innerHTML = JSON.parse(localStorage.getItem('total'));
+        text.innerHTML = sum.innerHTML;
 
         function currentSumCart() { // отправляет данные в миниатюру и корзину
             if (location.pathname == '/D:/Front-end/Course_work_2/catalog.html') {//путь должен вести к файлу 'catalog.html'

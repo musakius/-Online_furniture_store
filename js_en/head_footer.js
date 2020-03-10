@@ -41,7 +41,7 @@ function addHeaderAndFooter() {
                                 <div class="block_basket">
                                     <div class="basket">
                                         <i class="fas fa-shopping-cart"></i>
-                                        <span> Tawara: 
+                                        <span> Products: 
                                             <span class="quantity">0</span> 
                                             <span class="sum">(0) BYN</span>
                                         </span>
