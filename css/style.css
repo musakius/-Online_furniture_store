@@ -152,10 +152,10 @@ header {
     justify-content: space-between;
 }
 .logo {
-    width: 110px;
+    width: 100px;
 }
 .text_head {
-    padding-top: 25px;
+    padding-top: 15px;
     text-align: center;
     width: 38%;
 }
@@ -366,6 +366,7 @@ h1 {
 .block_advantages .content .item {
     text-align: center;
     width: 25%;
+    min-width: 240px;
 }
 
 .block_advantages .content .item img{
@@ -389,11 +390,13 @@ h1 {
 }
 .block_information .content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     text-align: center;
 }
 .block_information .content .item {
-    width: 25%;
+    width: 20%;
+    min-width: 106px;
 }
 .block_information .content .item img{
     width: 106px;
@@ -417,16 +420,20 @@ footer {
      text-align: center;
  }
  footer .content ul{
+     max-width: 700px;
      margin: 20px auto;
-     width: 45%;
      display: flex;
-     justify-content: space-between;
+     flex-wrap: wrap;
+     justify-content: space-evenly;
  }
  footer .content ul li a{
     cursor: pointer;
     font-weight: 600;
     font-size: 12px;
     color: #000;
+}
+footer .content ul li {
+    margin: 10px;
 }
 footer .content .svg {
     margin: 0 auto;
@@ -519,6 +526,7 @@ ul.breadcrumb {
     background-color: #f6f6f6;
     border: 1px solid #e4e4e4;
     margin: 0 0 30px 0;
+    max-width: 1440px;
   }
 
   ul.breadcrumb li {
@@ -633,4 +641,275 @@ ul.breadcrumb {
 }
 .dialog .win .send i {
     padding: 3px 3px 5px 3px;
+}
+.nav_bar .burger {
+    display: none;
+}
+
+
+@media(max-width:1330px) {
+    .block_stock {
+        padding: 0 40px 20px 40px;
+    }
+    #left {
+        left: -35px;
+    }
+    #right {
+        right: -35px;
+    }
+}
+@media(max-width:1200px) {
+    .center {
+        width: auto;
+        max-width: 1070px;
+        margin: 0 auto;
+    }
+    .center2 {
+        width: auto;
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    .block_stock {
+        width: 688px;
+        padding: 0 120px 20px 100px;
+    }
+    #left {
+        left: -70px;
+    }
+    #right {
+        right: -85px;
+    }
+}
+@media(max-width:1100px) {
+    .center {
+        width: auto;
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    .top_bar {
+        width: 60%;
+    }
+    #prev, #next {
+        top: -300px;
+    }
+}
+@media(max-width:992px) {
+    .center {
+        width: auto;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    h1{
+        font-size: 19px;
+    }
+    .nav_bar ul {
+		display: none;
+	}
+    .nav_bar ul li{
+		min-width: 200px;
+		border: 1px solid #d3d3d3;
+		border-radius: 5px;
+		height: 40px;
+		text-align: center;
+		margin-top: 13px;
+	}
+	.nav_bar .burger {
+        float: right;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 30px;
+		height: 30px;
+		margin: 2px;
+		border-radius: 28px;
+		border: 2px solid #73c0c1;
+	}
+
+	.nav_bar .burger i {
+		display: block;
+		width: 4px;
+		height: 4px;
+		margin: 2px;
+		border-radius: 5px;
+		background-color: #73c0c1;
+	}
+
+	.nav_bar .open {
+		display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 330px;
+        padding-bottom: 20px;
+    }
+    .top_bar {
+        width: 72%;
+    }
+    #prev, #next {
+        top: -260px;
+    }
+    .block_advantages .content {
+        flex-wrap: wrap;
+    }
+    .block_advantages .content .item {
+        width: 50%;
+        margin: 0 auto 30px auto;
+    }
+}
+@media(max-width:840px) {
+    .top_bar {
+        width: 40%;
+    }
+    .top_bar li{
+        font-size: 0px;
+    }
+    .top_bar li i{
+        font-size: 15px;
+    }
+    .top_bar li div{
+        font-size: 18px;
+    }
+    .top_ponnel .block_top ul .li_leng div a,
+    .top_ponnel .block_top ul .li_user div a {
+        padding: 0 10px 0 10px;
+        font-weight: 500;
+    }
+    .center {
+        width: auto;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    .block_stock {
+        width: 676px;
+        padding: 0 60px 20px 30px;
+    }
+    #left {
+        left: -25px;
+    }
+    #right {
+        right: -50px;
+    }
+}
+@media(max-width:768px) {
+    .center {
+        width: auto;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    #prev, #next {
+        top: -215px;
+        font-size: 50px;
+    }
+    .block_stock {
+        width: 320px;
+        padding: 0 60px 20px 60px;
+    }
+    #left {
+        left: -50px;
+    }
+    .dialog .show {
+        width: 80px;
+        height: 80px;
+    }
+    footer .content img {
+        width: 100%;
+    }
+}
+@media(max-width:640px) {
+    header {
+        max-height: 200px;
+    }
+    .center {
+        width: auto;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .text_head {
+        order: -1;
+        padding: 10px 0 25px 0;
+        width: 100%;
+    }
+    .block_head {
+        flex-wrap: wrap;
+    }
+    #prev, #next {
+        top: -185px;
+    }
+    .gallery .buttons i {
+        font-size: 18px;
+    }
+}
+@media(max-width:540px) {
+    .center {
+        width: auto;
+        max-width: 450px;
+        margin: 0 auto;
+    }
+    #prev, #next {
+        top: -150px;
+        font-size: 40px;
+    }
+    .block_stock .content_discount li {
+        width: 320px;
+    }
+    .block_stock {
+        width: 320px;
+        padding: 0 0px 20px 0px;
+    }
+    #left {
+        left: -15px;
+    }
+    #right {
+        right: -15px;
+    }
+}
+@media(max-width:480px) {
+    .center {
+        width: auto;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+@media(max-width:440px) {
+    .top_bar li i {
+        font-size: 11px;
+    }
+    header {
+        max-height: 220px;
+    }
+    .logo {
+        width: 0px;
+    }
+    .text_head {
+        order: 0;
+        padding: 0 0 20px 0 ;
+        width: 97%;
+        margin-left: 10px;
+    }
+    .center {
+        width: auto;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+    .block_basket {
+        margin: 0 auto;
+    }
+    #prev, #next {
+        top: -135px;
+    }
+}
+@media(max-width:380px) {
+    .center {
+        width: auto;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    #prev, #next {
+        top: -110px;
+    }
+    #left {
+        left: -10px;
+    }
+    #right {
+        right: -10px;
+    }
 }

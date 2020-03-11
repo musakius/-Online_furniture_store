@@ -12,7 +12,7 @@ function addHeaderAndFooter() {
                                     <a href="./search.html"><i id="but_search" class="fas fa-search"></i></a>
                                 </div>  
                                 <ul class="top_bar">
-                                    <li class="li_leng" id="choice_leng">Выбор языка <i class="fas fa-caret-down"></i>
+                                    <li class="li_leng" id="choice_leng"><i class="fas fa-language"></i> Выбор языка <i class="fas fa-caret-down"></i>
                                         <div id="id_leng">
                                             <a class="rus" href="#">Рус</a>
                                             <a class="en" href="#">Eng</a>
@@ -55,17 +55,26 @@ function addHeaderAndFooter() {
                             </div>
                         </div>`;
 
-    navTwo.innerHTML = `<ul class="ul_bar">
+    navTwo.innerHTML = `<div class="center">
+                            <span class="burger" id="burger">
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </span>
+                        </div>
+                        <ul class="ul_bar" id="menu">
                             <li><a href="./index.html">Главная</a></li>
                             <li><a href="./catalog.html">Каталог</a></li>
                             <li><a href="./blog.html">Блог</a></li>
                             <li><a href="./faq.html">FAQ</a></li>
                             <li><a href="./us.html">О нас</a></li>
                             <li><a href="./contact.html">Контакты</a></li>
-                        </ul>`;
+                        </ul>
+                        `;
 
 
-    footer.innerHTML = `<div class="content">
+    footer.innerHTML = `<div class="center">
+                        <div class="content">
                             <img src="./img/webpay.png" alt="webpay" title="webpay">
                             <ul>
                                 <li><a href="#">ПОДАРОЧНЫЕ СЕРТИФИКАТЫ</a></li>
@@ -85,6 +94,7 @@ function addHeaderAndFooter() {
                                     <div><i class="fab fa-facebook-f"></i></div>
                                 </a>
                             </div>
+                        </div>
                         </div>`;
 
     dialog.innerHTML = `<div id="win" class="win" style="display: none">
@@ -101,12 +111,15 @@ function popupWindow() {
 let input = document.querySelector('.input_dialog');
 let text = document.querySelector('.dialog_text');
 let send = document.querySelector('.send');
+let show = document.querySelector('.show')
 
-document.querySelector('.show').onclick = function() {
+show.onclick = function() {
   win.style.display = "block";
+  show.style.display = "none";
 };
 document.querySelector('.close_window').onclick = function() {
     win.style.display = "none";
+    show.style.display = "block";
 };
 send.onclick = function() {
     let p_user = document.createElement('span');
@@ -161,3 +174,11 @@ rus.onclick = function () {
 en.onclick = function () {
     location.href = "./index_en/index.html"
 }
+
+document.getElementById("burger").onclick = function(){
+    openCloseMenu()
+};
+
+function openCloseMenu() {
+    document.getElementById("menu").classList.toggle("open")
+};

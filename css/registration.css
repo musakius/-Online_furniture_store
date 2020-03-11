@@ -1,5 +1,6 @@
 .container_registration .content{
     width: 60%;
+    min-width: 480px;
     display: flex;
     margin: 40px auto 80px auto;
 }
@@ -103,4 +104,51 @@
 .container_authorization form .error_text {
     text-align: center;
     color: rgb(180, 19, 19);
+}
+@media(max-width: 992px){
+    .container_authorization form {
+        width: 70%;
+    }
+}
+@media(max-width:600px) {
+    .container_registration .content .avatar img {
+        width: 100px;
+        padding: 20px 30px 180px 30px;
+    }
+    .container_registration .content {
+        min-width: 370px;
+    }
+    .container_authorization form {
+        width: 80%;
+    }
+}
+@media(max-width:440px) {
+    .container_registration .content .avatar img {
+        width: 80px;
+        padding: 20px 20px 180px 20px;
+    }
+    .container_registration .content {
+        min-width: 300px;
+    }
+    .container_registration .content form {
+        width: 45%;
+    }
+    .container_registration .content form label input {
+        width: 80%;
+    }
+    .container_registration .content form .btn_primary, .container_authorization form .btn_enter {
+        margin-right: -12px;
+    }
+    .container_authorization form {
+        width: 80%;
+    }
+    .container_registration .content form .btn_primary, .container_authorization form .btn_enter {
+        margin-right: 6px;
+    }
+    .container_authorization form label span {
+        margin: 10px;
+    }
+    .container_authorization form label input {
+        width: 88%;
+    }
 }

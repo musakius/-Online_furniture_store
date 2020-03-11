@@ -49,3 +49,18 @@ section .content slot .item span{
     font-size: 16px;
     color: #666;
 }
+@media(max-width:1140px) {
+    section .content {
+        width: 76%;
+    }
+}
+@media(max-width:840px) {
+    section .content {
+        width: 86%;
+    }
+}
+@media(max-width:640px) {
+    section .content {
+        width: 100%;
+    }
+}

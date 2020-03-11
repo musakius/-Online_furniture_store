@@ -1,7 +1,22 @@
-
-
-
-
+section .pop {
+    display: flex;
+    justify-content: space-around;
+}
+section .pop li {
+    font-weight: 600;
+}
+section .pop li:nth-child(1){
+    margin-left: 115px;
+}
+section .pop li:nth-child(2){
+    margin-left: 250px;
+}
+section .pop li:nth-child(3){
+    margin-left: 50px;
+}
+section .pop li:nth-child(4){
+    margin-right: 95px;
+}
 section .container-basket ul li {
     display: flex;
     justify-content: space-between;
@@ -17,9 +32,9 @@ section .container-basket ul li .name {
     width: 220px;
     font-weight: 600;
     color: #4a8a8b;
-    line-height: 60px;
+    align-self: center;
     font-size: 16px;
-    margin-left: -80px;
+    margin-left: -90px;
 }
 section .container-basket ul li div {
     display: flex;
@@ -53,6 +68,7 @@ section .container-basket ul li .price{
 section .container-basket ul li .total_price{
     font-weight: 600;
     font-size: 14px;
+    color: #4a8a8b;
 }
 
 section .container-basket ul li i {
@@ -64,4 +80,138 @@ section .container-basket .text {
     font-weight: 600;
     font-size: 20px;
     padding: 25px 50px;
+}
+@media(max-width:1200px) {
+    /* section .container-basket ul li .name {
+        margin-left: -45px;
+    } */
+}
+@media(max-width:1100px) {
+    section .container-basket ul li .name {
+        margin-left: -65px;
+    }
+}
+@media (max-width: 1000px) {
+    section .container-basket ul li .name {
+        margin-left: -40px;
+    }
+    section .pop li:nth-child(1) {
+        line-height: 35px;
+    }
+    section .pop li:nth-child(2) {
+        margin-left: 230px;
+        line-height: 35px;
+    }
+    section .pop li:nth-child(4) {
+        margin-right: 40px;
+    }
+    section .pop li:nth-child(3) {
+        margin-left: 60px;
+    }
+}
+@media (max-width: 845px) {
+    section .container-basket ul li .name {
+        margin-left: -20px;
+    }
+    section .pop li:nth-child(2) {
+        margin-left: 205px;
+    }
+    section .pop li:nth-child(3) {
+        margin-left: 33px;
+    }
+}
+@media (max-width: 770px) {
+    section .container-basket ul li .name {
+        margin-left: 0px;
+        width: 160px;
+    }
+    section .pop li:nth-child(2) {
+        margin-left: 135px;
+    }
+    section .pop li:nth-child(3) {
+        margin-left: 33px;
+    }
+}
+@media (max-width: 660px) {
+    section .container-basket ul li .name {
+        margin-left: 0px;
+        width: 120px;
+    }
+    section .pop li {
+        font-size: 14px;
+    }
+    section .pop li:nth-child(1) {
+        margin-left: 95px;
+    }
+    section .pop li:nth-child(2) {
+        margin-left: 100px;
+    }
+    section .pop li:nth-child(3) {
+        margin-left: 30px;
+    }
+    section .pop li:nth-child(4) {
+        margin-right: 20px;
+    }
+    section .container-basket ul li {
+        margin: 5px 0 20px 0;
+    }
+    section .container-basket .text {
+        padding: 15px 10px;
+    }
+}
+@media(max-width:540px) {
+    section .container-basket ul li img {
+        width: 0px;
+    }
+    section .pop li:nth-child(1) {
+        margin-left: 40px;
+    }
+    section .pop li:nth-child(2) {
+        margin-left: 95px;
+    }
+    section .pop li:nth-child(3) {
+        margin-left: 50px;
+    }
+    section .pop li:nth-child(4) {
+        margin-right: 15px;
+    }
+    section .container-basket ul li .name {
+        width: 100px;
+        font-size: 14px;
+    }
+    section .pop li {
+        font-size: 13px;
+    }
+}
+@media(max-width:480px) {
+    section .pop li:nth-child(2) {
+        margin-left: 70px;
+    }
+    section .pop li:nth-child(3) {
+        margin-left: 30px;
+    }
+}
+@media(max-width:440px) {
+    section .pop li {
+        font-size: 12px;
+    }
+    section .pop li:nth-child(2) {
+        margin-left: 40px;
+    }
+    section .pop li:nth-child(3) {
+        margin-left: 0px;
+        margin: 0 10px;
+    }
+    section .container-basket ul li div p {
+        padding: 5px 10px;
+    }
+    section .container-basket ul li div button i {
+        margin: 0px;
+        font-size: 22px;
+    }
+    section .container-basket ul li .name,
+    section .container-basket ul li .price,
+    section .container-basket ul li .total_price {
+        font-size: 13px;
+    }
 }

@@ -61,7 +61,7 @@
 }
 .card_product .content .purchase li span {
     display: inline-block;
-    width: 40%;
+    width: 140px;
 }
 .card_product .content .purchase .col {
     width: 50%;
@@ -122,7 +122,7 @@
 .card_product .content .info .block_reviews .name input,
 .card_product .content .info .block_reviews .text textarea {
     margin-left: 10px;
-    width: 100%;
+    width: 90%;
     padding: 5px;
     font-size: 14px;
     border: 1px solid #ccc;
@@ -145,7 +145,8 @@
 }
 .card_product .content .info .block_reviews button {
     margin-top: 30px;
-    margin-right: -20px;
+    margin-right: 30px;
+    margin-bottom: 30px;
     float: right;
     background-color: #73c0c1;
     color: #fff;
@@ -184,6 +185,7 @@
     margin: 20px 10px 30px 10px;
 }
 #op, #ot {
+    width: 135px;
     cursor: pointer;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -194,4 +196,46 @@
 }
 #ot {
     background-color: #ffffff;
+}
+
+
+@media(max-width:998px) {
+    .card_product .content .images {
+        width: 65%;
+    }
+    .card_product .content .purchase {
+        width: 35%;
+    }
+}
+@media(max-width:840px) {
+    .card_product .content .images {
+        width: 60%;
+    }
+    .card_product .content .purchase {
+        width: 40%;
+    }
+}
+@media(max-width:770px) {
+    .card_product .content .images {
+        width: 100%;
+        padding-top: 0px;
+    }
+    .card_product .content .purchase {
+        width: 60%;
+        margin: 0 auto;
+    }
+    .card_product .content .info {
+        width: 99%;
+    }
+}
+@media(max-width:460px) {
+    .card_product .content .images .hed_img img {
+        width: 300px;
+    }
+    .card_product .content .images .rest_img {
+        flex-wrap: wrap;
+    }
+    .card_product .content .purchase {
+        width: 100%;
+    }
 }

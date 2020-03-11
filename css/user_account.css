@@ -14,6 +14,7 @@ section .block_calc ul {
 section .block_calc ul li {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border-top: 1px solid #e4e4e4;
     border-bottom: 1px solid #e4e4e4;
 }
@@ -29,7 +30,6 @@ section .block_calc ul li .block_name img{
 }
 section .block_calc ul li .block_price{
     display: flex;
-    padding: 30px 0;
 }
 section .block_calc ul li .block_price p {
     font-weight: 600;
@@ -81,4 +81,46 @@ section .block_calc .block_result .result .text {
     font-size: 16px;
     margin-top: 10px;
     padding: 15px;
+}
+@media(max-width:840px){
+    section .block_calc ul li .block_name .name {
+        font-size: 14px;
+    }
+}
+@media(max-width:770px){
+    section .block_calc {
+        flex-wrap: wrap-reverse;
+    }
+    section .block_calc .block_result {
+        width: 90%;
+        margin: 0 auto 20px auto;
+    }
+    section .block_calc ul {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+@media(max-width:500px){
+    section .block_calc .block_result {
+        width: 90%;
+    }
+    section .block_calc ul {
+        width: 90%;
+    }
+    section .block_calc ul li .block_name img {
+        width: 0px;
+    }
+    section .block_calc ul li .block_name .name {
+        bottom: 0px;
+        left: 0px;
+    }
+    section .block_calc ul li .block_price p {
+        padding: 20px 12px;
+        font-size: 16px;
+    }
+    section .block_calc ul li .block_price i {
+        font-size: 24px;
+        padding-top: 13px;
+        padding: 2px;
+    }
 }

@@ -18,6 +18,9 @@ section .content {
     padding-top: 20px;
     border-top: 1px solid #ddd;
 }
+section .content slot a {
+    margin: 0 auto;
+}
 section .content slot .item {
     text-align: left;
     width: 260px;
@@ -48,4 +51,9 @@ section .content slot .item .price {
     margin: 10px;
     color: #444;
     font-size: 18px;
+}
+@media(max-width:640px) {
+    section .content {
+        padding-left: 0px;
+    }
 }

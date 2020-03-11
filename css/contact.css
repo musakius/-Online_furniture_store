@@ -20,3 +20,40 @@ section .content .contact div p {
     font-weight: 400;
     color: #666;
 }
+@media(max-width:1000px) {
+    section .content .contact {
+        max-height: 421px;
+    }
+}
+@media(max-width:768px) {
+    section .content .contact {
+        max-height: 421px;
+    }
+    section .content .contact div {
+        padding: 17px 0px;
+    }
+}
+@media(max-width:650px) {
+    section .content {
+        flex-direction: column-reverse;
+        margin: 40px 0 20px 0;
+    }
+    .content iframe {
+        width: 400px;
+        margin: 0 auto;
+    }
+    section .content .contact {
+        width: 318px;
+        margin: 0 auto;
+    }
+}
+@media(max-width:450px) {
+    .content iframe {
+        width: 280px;
+        margin: 0 auto;
+    }
+    section .content .contact {
+        width: 198px;
+        margin: 0 auto;
+    }
+}

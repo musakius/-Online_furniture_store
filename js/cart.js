@@ -55,12 +55,12 @@ class Cart {
             let price = createOneProduct.getProductItem({
                 tagName: 'div',
                 className: 'price',
-                textName: `За единицу: ${productsCart[i].price} BYN`
+                textName: `${productsCart[i].price} BYN`
             });
             let total_price = createOneProduct.getProductItem({
                 tagName: 'div',
                 className: 'total_price',
-                textName: `Общая сумма: ${JSON.parse(localStorage.getItem('Sum' + productsCart[i].id))} BYN`
+                textName: `${JSON.parse(localStorage.getItem('Sum' + productsCart[i].id))} BYN`
             });
             let close = createOneProduct.getProductItem({
                 tagName: "i",
@@ -75,13 +75,13 @@ class Cart {
                 // записываем общую сумму одинаковых товаров в корзине ↓
                 total_price.innerHTML = +(total_price.innerHTML.replace(/\D+/g, '')) + cart.catalogProduct[i].price;
                 localStorage.setItem('Sum' + id, JSON.stringify(total_price.innerHTML));
-                total_price.innerHTML = 'Общая сумма: ' + (total_price.innerHTML) + " BYN";
+                total_price.innerHTML = total_price.innerHTML + " BYN";
                 // записываем итоговую сумму за все товары в корзине ↓
                 let result = 0;
                 let sum = document.querySelectorAll('.total_price');
                 for (let i = 0; i < sum.length; i++) {
                     result += +sum[i].innerHTML.replace(/\D+/g, '');
-                    text.innerHTML = 'Итого: ' + result + ' BYN';
+                    text.innerHTML = result + ' BYN';
                     localStorage.setItem('total', JSON.stringify(text.innerHTML));
                 }
 
@@ -101,13 +101,13 @@ class Cart {
 
                 total_price.innerHTML = +(total_price.innerHTML.replace(/\D+/g, '')) - cart.catalogProduct[i].price;
                 localStorage.setItem('Sum' + id, JSON.stringify(total_price.innerHTML));
-                total_price.innerHTML = 'Общая сумма: ' + (total_price.innerHTML) + " BYN";
+                total_price.innerHTML = total_price.innerHTML + " BYN";
 
                 let result = 0;
                 let sum = document.querySelectorAll('.total_price');
                 for (let i = 0; i < sum.length; i++) {
                     result += +sum[i].innerHTML.replace(/\D+/g, '');
-                    text.innerHTML = 'Итого: ' + result + ' BYN';
+                    text.innerHTML = result + ' BYN';
                     localStorage.setItem('total', JSON.stringify(text.innerHTML));
                 }
 
@@ -133,7 +133,7 @@ class Cart {
                 let num = JSON.parse(localStorage.getItem('CaunterStore' + productsCart[i].id)); // обновляем итог
                 text.innerHTML = +(text.innerHTML.replace(/\D+/g, '')) - (cart.catalogProduct[i].price * num);
                 localStorage.setItem('total', JSON.stringify(text.innerHTML));
-                text.innerHTML = 'Итого: ' + (text.innerHTML) + " BYN";
+                text.innerHTML = text.innerHTML + " BYN";
 
                 localStorage.removeItem('Sum' + id, JSON.stringify(total_price.innerHTML)); // удаляем все одинаковые товары
                 localStorage.removeItem('CaunterStore' + id, JSON.stringify((cardStore.getProduct().filter(item => item == id).length)));
