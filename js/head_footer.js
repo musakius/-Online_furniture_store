@@ -108,33 +108,51 @@ function addHeaderAndFooter() {
 addHeaderAndFooter();
 
 function popupWindow() {
-let input = document.querySelector('.input_dialog');
-let text = document.querySelector('.dialog_text');
-let send = document.querySelector('.send');
-let show = document.querySelector('.show')
+    let input = document.querySelector('.input_dialog');
+    let text = document.querySelector('.dialog_text');
+    let send = document.querySelector('.send');
+    let show = document.querySelector('.show')
 
-show.onclick = function() {
-  win.style.display = "block";
-  show.style.display = "none";
-};
-document.querySelector('.close_window').onclick = function() {
-    win.style.display = "none";
-    show.style.display = "block";
-};
-send.onclick = function() {
-    let p_user = document.createElement('span');
+    show.onclick = function () {
+        win.style.display = "block";
+        show.style.display = "none";
+    };
+    document.querySelector('.close_window').onclick = function () {
+        win.style.display = "none";
+        show.style.display = "block";
+    };
+    send.onclick = function () {
+        let p_user = document.createElement('span');
         p_user.className = "p_user";
         p_user.innerHTML = input.value;
-    let p_server = document.createElement('string');
+        let p_server = document.createElement('string');
         p_server.className = "p_server";
         p_server.innerHTML = input.value;
 
-    text.appendChild(p_user);
-    
-    setTimeout(function() {
-        text.appendChild(p_server);
-    }, 2000);
-}
+        text.appendChild(p_user);
+
+        input.value = '';
+        setTimeout(function () {
+            text.appendChild(p_server);
+        }, 2000);
+    }
+    input.addEventListener('keypress', function (keyPressed) {
+        if (keyPressed.which === 13 && this.value != '' && this.value.length < 20) {
+            let p_user = document.createElement('span');
+            p_user.className = "p_user";
+            p_user.innerHTML = input.value;
+            let p_server = document.createElement('string');
+            p_server.className = "p_server";
+            p_server.innerHTML = input.value;
+
+            text.appendChild(p_user);
+
+            input.value = '';
+            setTimeout(function () {
+                text.appendChild(p_server);
+            }, 2000);
+        }
+    })
 }
 popupWindow();
 
@@ -175,7 +193,7 @@ en.onclick = function () {
     location.href = "./index_en/index.html"
 }
 
-document.getElementById("burger").onclick = function(){
+document.getElementById("burger").onclick = function () {
     openCloseMenu()
 };
 
