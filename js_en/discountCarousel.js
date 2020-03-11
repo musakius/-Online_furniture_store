@@ -134,11 +134,9 @@ function initializeClock(id, endtime) {
     let timeinterval = setInterval(updateClock, 1000);
 }
 
-/* for (let i = 1; i < 7; i++){
+for (let i = 1; i < 7; i++){
     CreateClock('.countdown' + i);
     let time = Math.floor(Math.random() * (2592000000 - 86400000 + 1)) + 86400000;;
     initializeClock('.countdown' + i, new Date(Date.parse(new Date()) + time));
-} */
+}
 
-
-/* ddd */
