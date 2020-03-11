@@ -581,7 +581,7 @@ ul.breadcrumb {
 .dialog .win{
     width: 280px;
     position: fixed;
-    top: 32vh;
+    top: 28vh;
     right: 20px;
     border-radius: 25px;
     z-index: 3;
