@@ -837,6 +837,24 @@ ul.breadcrumb {
     .gallery .buttons i {
         font-size: 18px;
     }
+    .dialog .win{
+        top: 2vh;
+    }
+    .dialog .win .dialog_text {
+        height: 200px;
+    }
+    .dialog .show {
+        width: 60px;
+        height: 60px;
+        right: 30px;
+    }
+    .dialog .show i {
+        font-size: 25px;
+    }
+    .container-cart {
+        top: 189px;
+        width: 86%;
+    }
 }
 @media(max-width:540px) {
     .center {
