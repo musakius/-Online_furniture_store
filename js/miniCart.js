@@ -42,12 +42,12 @@ class MiniCart {
                         let index = cardStore.getProduct().indexOf(minicart.catalogProduct[i].id);
 
                         if (index === -1) {
-                            text.innerHTML = `(${+(text.innerHTML.replace(/\D+/g, '')) - minicart.catalogProduct[i].price}) BYN`;
+                            text.innerHTML = `(${+(text.innerHTML.replace(/\D+/g, '')) - +minicart.catalogProduct[i].price}) BYN`;
                             localStorage.removeItem('Sum' + id, JSON.stringify(catalogProduct[i].price));
                             localStorage.setItem('total', JSON.stringify(text.innerHTML));
                             sum.innerHTML = JSON.parse(localStorage.getItem('total'));
                         } else {
-                            text.innerHTML = `(${+(text.innerHTML.replace(/\D+/g, '')) + minicart.catalogProduct[i].price}) BYN`;
+                            text.innerHTML = `(${+(text.innerHTML.replace(/\D+/g, '')) + +minicart.catalogProduct[i].price}) BYN`;
                             localStorage.setItem('Sum' + id, JSON.stringify(catalogProduct[i].price));
                             localStorage.setItem('total', JSON.stringify(text.innerHTML));
                             sum.innerHTML = JSON.parse(localStorage.getItem('total'));
