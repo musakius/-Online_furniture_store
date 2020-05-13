@@ -1,2 +1,2 @@
 
-https://musakius.github.io/Course_work_2/
+‒ Educational project: Online-store (using JavaScript, HTML + CSS)
